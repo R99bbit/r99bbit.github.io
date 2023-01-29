@@ -1,6 +1,6 @@
 ---
 title: "[2021 HackPack CTF] baby calc"
-date: 2023-01-29 17:34:00
+date: 2023-01-29 17:34:00 +9000
 categories: [CTF, PWNABLE]
 tags: [ctf]
 ---
