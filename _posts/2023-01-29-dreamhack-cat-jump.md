@@ -125,7 +125,7 @@ int main(void) {
 
 random 으로 생성되는 값에 따라 생성되는 왼쪽/오른쪽 정답을 37회 맞추면 command injection을 수행할 수 있다.
 
-## vulnability
+## vulnerability
 
 ```c
 // L42

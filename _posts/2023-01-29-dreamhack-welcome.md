@@ -44,7 +44,7 @@ flag에 read가 막혀있으나, `chal` 에 setuid가 걸려있다. 이를 통�
 
 그러므로 임의 경로에 bash를 실행해주는 명령을 clear라는 이름으로 저장하고, 해당 경로를 환경변수에 추가해주면 플래그를 읽을 수 있다.
 
-## vulnability
+## vulnerability
 
 ```plaintext
 pwn@localhost:~$ ./flag

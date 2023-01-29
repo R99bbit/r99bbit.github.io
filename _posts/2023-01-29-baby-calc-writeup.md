@@ -30,7 +30,7 @@ Variable two: 2
 
 ---
 
-## hex-ray
+## source code
 
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)
@@ -116,7 +116,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 ---
 
-## proof of concept
+## vulnerability
 
 ```bash
 r99bbit@parkmin-dev:~/ctf$ ./chal 
@@ -134,7 +134,7 @@ r99bbit@parkmin-dev:~/ctf$
 
 ---
 
-## exploit
+## solve
 
 - *local exploit*
 
