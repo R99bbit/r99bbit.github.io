@@ -3,9 +3,10 @@ title: "[Dreamhack CTF Season 2 #11] Cat Jump writeup"
 date: 2023-01-29 21:56:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
-author: R99bbit
 description: ctypes를 이용해 random 값 생성하기
 ---
+
+## source code
 소스코드가 주어지는 문제이다.
 
 ```c
@@ -124,6 +125,8 @@ int main(void) {
 
 random 으로 생성되는 값에 따라 생성되는 왼쪽/오른쪽 정답을 37회 맞추면 command injection을 수행할 수 있다.
 
+## vulnability
+
 ```c
 // L42
 char cmd_fmt[] = "echo \"%s\" > /tmp/cat_db";
@@ -145,6 +148,8 @@ char cmd_fmt[] = "echo \"%s\" > /tmp/cat_db";
 다만, 여기서 주의해야할 점은 만약 `srand(time(NULL))` 에 의해 값이 [1, 2, 3, 4, 5] 로 만들어졌을 경우 값을 하나씩 iterate 하여 사용하는데(1, 2, 3, 4, 5, ...), 고양이 점프 게임에서는 한 루프에 `rand()`를 (1) 답을 입력 받기 전, (2) 답을 입력한 후에 캣닢을 줄지 말지 결정하는 루틴 총 두번 수행한다.
 
 때문에 exploit할 때 한 루프에 `rand()` 가 두번 호출될 수 있도록 작성해야 한다.
+
+## solve
 
 풀이는 아래와 같다.
 

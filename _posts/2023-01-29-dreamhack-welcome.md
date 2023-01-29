@@ -3,10 +3,10 @@ title: "[Dreamhack CTF Season 2 #11] Welcome writeup"
 date: 2023-01-29 21:56:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
-author: R99bbit
 description: exploit setuid binary
 ---
 
+## source code
 chal 바이너리의 내용은 아래와 같다.
 
 ```c
@@ -43,6 +43,8 @@ flag에 read가 막혀있으나, `chal` 에 setuid가 걸려있다. 이를 통�
 앞서 바이너리를 본대로 chal은 `system("clear")` 와 같이 실행하므로 bash의 환경변수($PATH)의 영향을 받는다.
 
 그러므로 임의 경로에 bash를 실행해주는 명령을 clear라는 이름으로 저장하고, 해당 경로를 환경변수에 추가해주면 플래그를 읽을 수 있다.
+
+## vulnability
 
 ```plaintext
 pwn@localhost:~$ ./flag
