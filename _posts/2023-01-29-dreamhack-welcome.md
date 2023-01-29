@@ -1,8 +1,9 @@
 ---
 title: "[Dreamhack CTF Season 2 #11] Welcome writeup"
-date: 2023-01-29 21:56:00 +09:00
+date: 2023-01-29 21:56:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
+author: R99bbit
 ---
 
 chal 바이너리의 내용은 아래와 같다.

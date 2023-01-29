@@ -1,11 +1,12 @@
 ---
 title: "[2021 HackPack CTF] baby calc writeup"
-date: 2023-01-29 17:33:00 +09:00
+date: 2023-01-29 17:33:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
+author: R99bbit
 ---
 
-# checksec
+## checksec
 
 ```
 RELRO           STACK CANARY      NX            PIE             
@@ -14,7 +15,7 @@ Full RELRO      Canary found      NX enabled    PIE enabled
 
 ---
 
-# 기능 분석
+## 기능 분석
 
 ```bash
 r99bbit@parkmin-dev:~/ctf$ ./chal 
@@ -29,7 +30,7 @@ Variable two: 2
 
 ---
 
-# hex-ray
+## hex-ray
 
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)
@@ -115,7 +116,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 ---
 
-# proof of concept
+## proof of concept
 
 ```bash
 r99bbit@parkmin-dev:~/ctf$ ./chal 
@@ -133,7 +134,7 @@ r99bbit@parkmin-dev:~/ctf$
 
 ---
 
-# exploit
+## exploit
 
 - *local exploit*
 

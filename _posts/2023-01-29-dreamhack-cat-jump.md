@@ -1,8 +1,9 @@
 ---
 title: "[Dreamhack CTF Season 2 #11] Cat Jump writeup"
-date: 2023-01-29 21:56:00 +09:00
+date: 2023-01-29 21:56:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
+author: R99bbit
 ---
 소스코드가 주어지는 문제이다.
 
