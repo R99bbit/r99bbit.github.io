@@ -4,6 +4,7 @@ date: 2023-01-29 17:33:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
 author: R99bbit
+description: simple python command injection
 ---
 
 ## checksec

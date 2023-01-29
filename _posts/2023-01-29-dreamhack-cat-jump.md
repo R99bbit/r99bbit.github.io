@@ -4,6 +4,7 @@ date: 2023-01-29 21:56:00 +0900
 categories: [CTF, PWNABLE]
 tags: [ctf]
 author: R99bbit
+description: ctypes를 이용해 random 값 생성하기
 ---
 소스코드가 주어지는 문제이다.
 
