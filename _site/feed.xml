@@ -1,0 +1,284 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Security Research</title>
+  <subtitle></subtitle>
+  <updated>2023-03-04T05:14:22+09:00</updated>
+  <author>
+    <name>Park Min</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Park Min </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>[iOS] iOS 16.3.1 Jailbreak (on MacOS)</title>
+    <link href="http://localhost:4000/posts/ios-jailbreak-16/" rel="alternate" type="text/html" title="[iOS] iOS 16.3.1 Jailbreak (on MacOS)" />
+    <published>2023-03-04T01:01:00+09:00</published>
+  
+    <updated>2023-03-04T01:01:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ios-jailbreak-16/</id>
+    <content src="http://localhost:4000/posts/ios-jailbreak-16/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="MOBILE" />
+    
+    <category term="IOS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Why?
+
+  최근 맡은 프로젝트에서 iOS 애플리케이션을 분석할 일이 생겼다. APK의 경우 대충 시중에 널려있는 에뮬레이터 가져다가 (어차피 루팅 손쉽게 할 수 있으니깐 버튼 하나로) frida 설치하고 후킹 돌리면서 분석하면 되는데 iOS는 그렇게 간단한 문제가 아니더라. 대충 번개장터에서 아무 휴대폰이나 사서 다운그레이드 한 다음에 탈옥시키면 되는줄 알았다. 그런데 막상 중고로 산 핸드폰은 최신 업데이트 되어있었고, Sign 없는 버전은 설치 안되는 문제 등등 이리저리 치이다가 그냥 가장 최신인 iOS 16.3 에서 탈옥하는 방법을 택했다.
+
+
+
+
+내 기기도 가능할까?
+
+개발자에 의하면 A8 부터 A11 칩셋을 사용하는 모델까지 가능하다고 한다. 호환되는 기기 목록은 아래와 같다.
+
+  iPho...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Docker] Nginx를 이용해서 SSL 설정하기(HTTPS)</title>
+    <link href="http://localhost:4000/posts/docker-nginx-proxy-ssl/" rel="alternate" type="text/html" title="[Docker] Nginx를 이용해서 SSL 설정하기(HTTPS)" />
+    <published>2023-02-01T00:56:01+09:00</published>
+  
+    <updated>2023-02-01T00:56:01+09:00</updated>
+  
+    <id>http://localhost:4000/posts/docker-nginx-proxy-ssl/</id>
+    <content src="http://localhost:4000/posts/docker-nginx-proxy-ssl/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="DOCKER" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Why?
+
+  최근에 브라우저와 내 서버 간의 HTTP 통신을 다뤄야 하는 일이 있었다. 이 때 브라우저로 접속한 서버는 HTTPS, 내가 구현한 서버는 HTTP 였기 때문에 당연하게도 Mixed Contents 문제가 발생했다. 문제를 해결하기 위해 내 서버에 SSL 인증을 넣어주기로 했다. 서버에 SSL 인증을 받는 방법에는 여러가지가 있지만, 매번 프레임워크 별 HTTPS 적용 방법을 검색하는 것이 지쳤기 때문에 항상 눈독들여 왔던 “nginx reverse proxy로 ssl 인증 적용하기(무려 docker로!)” 를 시도해보려고 한다.
+
+
+
+  +) 금방 구현할 수 있을 줄 알았는데 생각보다 많은 시간이 걸렸다. 관련 글들은 많으나 어딘가 난잡했고, 여기저기서 config 내용을 복붙하다보니 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Dreamhack CTF Season 2 #11] Welcome writeup</title>
+    <link href="http://localhost:4000/posts/dreamhack-welcome/" rel="alternate" type="text/html" title="[Dreamhack CTF Season 2 #11] Welcome writeup" />
+    <published>2023-01-29T21:56:00+09:00</published>
+  
+    <updated>2023-01-29T23:05:34+09:00</updated>
+  
+    <id>http://localhost:4000/posts/dreamhack-welcome/</id>
+    <content src="http://localhost:4000/posts/dreamhack-welcome/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PWNABLE" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      source code
+chal 바이너리의 내용은 아래와 같다.
+
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  __asm { endbr64 }
+  sub_1080(1001LL, 1001LL, 1001LL);
+  sub_1090("clear");
+  sub_1070("Tada~!");
+  return 0;
+}
+
+
+바이너리를 실행하면 clear를 실행하고 Tada~ 문자열을 출력한 뒤 종료한다. 이제 remote에 접속해보자
+
+pwn@localhost:~$ id
+uid=1000(pwn) gid=1000(pwn) groups=1000(pwn)
+pwn@localhost:~$ ls -al
+total 48
+drwxr-x--- 1 pwn ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Dreamhack CTF Season 2 #11] Cat Jump writeup</title>
+    <link href="http://localhost:4000/posts/dreamhack-cat-jump/" rel="alternate" type="text/html" title="[Dreamhack CTF Season 2 #11] Cat Jump writeup" />
+    <published>2023-01-29T21:56:00+09:00</published>
+  
+    <updated>2023-01-29T23:05:34+09:00</updated>
+  
+    <id>http://localhost:4000/posts/dreamhack-cat-jump/</id>
+    <content src="http://localhost:4000/posts/dreamhack-cat-jump/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PWNABLE" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      source code
+소스코드가 주어지는 문제이다.
+
+/* cat_jump.c
+ * gcc -Wall -no-pie -fno-stack-protector cat_jump.c -o cat_jump
+*/
+
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;time.h&amp;gt;
+#include &amp;lt;unistd.h&amp;gt;
+
+#define CAT_JUMP_GOAL 37
+
+#define CATNIP_PROBABILITY 0.1
+#define CATNIP_INVINCIBLE_TIMES 3
+
+#define OBSTACLE_PROBABILITY 0.5
+#define OBSTACLE_LEFT  0
+#define OBSTACLE_RIGHT 1
+
+void I...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[2021 HackPack CTF] baby calc writeup</title>
+    <link href="http://localhost:4000/posts/baby-calc-writeup/" rel="alternate" type="text/html" title="[2021 HackPack CTF] baby calc writeup" />
+    <published>2023-01-29T17:33:00+09:00</published>
+  
+    <updated>2023-01-29T23:05:34+09:00</updated>
+  
+    <id>http://localhost:4000/posts/baby-calc-writeup/</id>
+    <content src="http://localhost:4000/posts/baby-calc-writeup/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PWNABLE" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      checksec
+
+RELRO           STACK CANARY      NX            PIE             
+Full RELRO      Canary found      NX enabled    PIE enabled 
+
+
+
+
+기능 분석
+
+r99bbit@parkmin-dev:~/ctf$ ./chal 
+Welcome to CloudAdd! The fastest* adder on the planet, now in cloud!
+*this is not a legally binding statement
+Variable one: 1
+Variable two: 2
+3
+
+
+
+  입력 받은 두 수를 더해준다.
+
+
+
+
+source code
+
+int __cdecl main(int argc, const...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
