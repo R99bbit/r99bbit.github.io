@@ -991,25 +991,6 @@ pwn@localhost:~$
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -1017,10 +998,6 @@ pwn@localhost:~$
     
     
     
-      
-        
-        
-
   
     
     
@@ -1030,15 +1007,6 @@ pwn@localhost:~$
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1054,6 +1022,23 @@ pwn@localhost:~$
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1065,15 +1050,6 @@ pwn@localhost:~$
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1094,28 +1070,19 @@ pwn@localhost:~$
     
     
     
-      
-    
   
     
     
     
     
       
-    
+        
+        
+
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1143,7 +1110,19 @@ pwn@localhost:~$
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1157,7 +1136,117 @@ pwn@localhost:~$
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -1192,8 +1281,6 @@ pwn@localhost:~$
     
     
     
-      
-    
   
     
     
@@ -1201,36 +1288,6 @@ pwn@localhost:~$
     
       
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -1247,29 +1304,6 @@ pwn@localhost:~$
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1305,19 +1339,22 @@ pwn@localhost:~$
       <a class="post-tag" href="/tags/ctf/">ctf</a>
     
       
+      <a class="post-tag" href="/tags/ios/">ios</a>
+    
+      
+      <a class="post-tag" href="/tags/mobile/">mobile</a>
+    
+      
+      <a class="post-tag" href="/tags/firda/">firda</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
       <a class="post-tag" href="/tags/https/">https</a>
     
       
-      <a class="post-tag" href="/tags/ios/">ios</a>
-    
-      
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
-    
-      
-      <a class="post-tag" href="/tags/mobile/">mobile</a>
     
       
       <a class="post-tag" href="/tags/nginx/">nginx</a>
@@ -1379,6 +1416,32 @@ pwn@localhost:~$
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1562,7 +1625,7 @@ Welcome to Clou...
       
       
       <div class="card">
-        <a href="/posts/ios-jailbreak-16/">
+        <a href="/posts/ios-ipa-dump-frida/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1574,13 +1637,13 @@ Welcome to Clou...
 
 
 <em class="small"
-    data-ts="1677859260"
+    data-ts="1677859380"
     data-df="ll"
     >
   Mar  4, 2023
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[iOS] iOS 16.3.1 Jailbreak (on MacOS)</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[iOS] iOS-Encrypted 된 IPA 복호화하기</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1591,7 +1654,7 @@ Welcome to Clou...
 
                 Why?
 
-  최근 맡은 프로젝트에서 iOS 애플리케이션을 분석할 일이 생겼다. APK의 경우 대충 시중에 널려있는 에뮬레이터 가져다가 (어차피 루팅 손쉽게 할 수 있으니깐 버튼 하나로) frida 설치하고 후킹 돌리면서 분석하면 되는데 iOS는 그렇게 간단한 문제가 아니더라. 대충 번개장터에서 아무 휴대폰이나 사서 다운그레이드 한 다음에 탈옥시키면 ...
+  최근 맡은 프로젝트에서 iOS 애플리케이션을 분석할 일이 생겼다. 점점 하다보니 왜 애플이 자기네들 제품/솔루션에 어마어마한 바운티를 걸었는지 알 것 같다. 그냥 간단한 애플리케이션 추출 과정도 번거롭고 번거롭다… iOS 애플리케이션 패키지인 IPA는 안드로이드 APK와 다르게 바로 추출한 파일을 Decompile 했을 때 분석을 할 수...
               </p>
             </div>
           </div>
@@ -1673,25 +1736,6 @@ Welcome to Clou...
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -1699,10 +1743,6 @@ Welcome to Clou...
     
     
     
-      
-        
-        
-
   
     
     
@@ -1712,15 +1752,6 @@ Welcome to Clou...
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1736,6 +1767,23 @@ Welcome to Clou...
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1747,15 +1795,6 @@ Welcome to Clou...
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1776,28 +1815,19 @@ Welcome to Clou...
     
     
     
-      
-    
   
     
     
     
     
       
-    
+        
+        
+
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1825,7 +1855,19 @@ Welcome to Clou...
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1839,7 +1881,117 @@ Welcome to Clou...
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -1874,8 +2026,6 @@ Welcome to Clou...
     
     
     
-      
-    
   
     
     
@@ -1883,36 +2033,6 @@ Welcome to Clou...
     
       
     
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -1929,29 +2049,6 @@ Welcome to Clou...
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1987,19 +2084,22 @@ Welcome to Clou...
       <a class="post-tag" href="/tags/ctf/">ctf</a>
     
       
+      <a class="post-tag" href="/tags/ios/">ios</a>
+    
+      
+      <a class="post-tag" href="/tags/mobile/">mobile</a>
+    
+      
+      <a class="post-tag" href="/tags/firda/">firda</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
       <a class="post-tag" href="/tags/https/">https</a>
     
       
-      <a class="post-tag" href="/tags/ios/">ios</a>
-    
-      
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
-    
-      
-      <a class="post-tag" href="/tags/mobile/">mobile</a>
     
       
       <a class="post-tag" href="/tags/nginx/">nginx</a>
