@@ -25,11 +25,11 @@ description: ios frida settings
 
 - iPhone이 탈옥되어 있다면 `Cydia`, `Sileo` 등 탈옥된 기기의 패키지 관리 애플리케이션이 있을 것이다.
 
-![](/assets/img/posts/230304-02-02.png){: width="40%" height="40%"}
+![](/assets/img/posts/230304-02-02.re.png){: width="40%" height="40%"}
 
 - `Sileo` 의 경우 [하단 네비게이션] > [소스] > [우측 상단 더하기] 에서 소스추가를 통해 frida의 repository인 `https://build.frida.re/` 를 추가해줘야 한다.
 
-![](/assets/img/posts/230304-02-03.png){: width="40%" height="40%"}
+![](/assets/img/posts/230304-02-03.re.png){: width="40%" height="40%"}
 
 - 이제 [하단 내비게이션] > [검색] > ['Frida' 검색] 을 통해 Frida를 기기에 설치한다.
 
