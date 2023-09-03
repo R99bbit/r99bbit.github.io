@@ -944,6 +944,16 @@ pwn@localhost:~$
         
         
         
+      <li><a href="/posts/use-amd64-on-apple-silicon/">[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/ios-setting-frida/">[iOS] iPhone에 Frida 환경 세팅하기</a></li>
+      
+        
+        
+        
       <li><a href="/posts/baby-calc-writeup/">[2021 HackPack CTF] baby calc writeup</a></li>
       
         
@@ -982,32 +992,6 @@ pwn@localhost:~$
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1022,8 +1006,6 @@ pwn@localhost:~$
     
     
     
-      
-    
   
     
     
@@ -1038,13 +1020,6 @@ pwn@localhost:~$
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1075,24 +1050,11 @@ pwn@localhost:~$
     
     
     
-      
-        
-        
-
   
     
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -1109,39 +1071,6 @@ pwn@localhost:~$
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1167,6 +1096,34 @@ pwn@localhost:~$
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
     
   
@@ -1174,6 +1131,15 @@ pwn@localhost:~$
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1212,6 +1178,46 @@ pwn@localhost:~$
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1269,11 +1275,6 @@ pwn@localhost:~$
     
     
     
-  
-    
-    
-    
-    
       
     
   
@@ -1318,6 +1319,11 @@ pwn@localhost:~$
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -1348,6 +1354,9 @@ pwn@localhost:~$
       <a class="post-tag" href="/tags/firda/">firda</a>
     
       
+      <a class="post-tag" href="/tags/apache/">apache</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
@@ -1357,13 +1366,10 @@ pwn@localhost:~$
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
     
       
+      <a class="post-tag" href="/tags/macos/">macos</a>
+    
+      
       <a class="post-tag" href="/tags/nginx/">nginx</a>
-    
-      
-      <a class="post-tag" href="/tags/proxy/">proxy</a>
-    
-      
-      <a class="post-tag" href="/tags/ssl/">ssl</a>
     
 
     </div>
@@ -1473,6 +1479,32 @@ pwn@localhost:~$
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1509,16 +1541,6 @@ pwn@localhost:~$
 <!-- Fill with the other newlest posts  -->
 
 
-
-  
-    
-    
-      
-      
-        
-        
-        
-          
 
 
 
@@ -1625,7 +1647,7 @@ Welcome to Clou...
       
       
       <div class="card">
-        <a href="/posts/ios-ipa-dump-frida/">
+        <a href="/posts/urmia-ctf-htaccess/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1637,13 +1659,13 @@ Welcome to Clou...
 
 
 <em class="small"
-    data-ts="1677859380"
+    data-ts="1693706460"
     data-df="ll"
     >
-  Mar  4, 2023
+  Sep  3, 2023
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[iOS] iOS-Encrypted 된 IPA 복호화하기</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Urmia CTF 2023] htaccess(helicoptering) writeup</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1652,9 +1674,23 @@ Welcome to Clou...
 
 
 
-                Why?
+                solve
 
-  최근 맡은 프로젝트에서 iOS 애플리케이션을 분석할 일이 생겼다. 점점 하다보니 왜 애플이 자기네들 제품/솔루션에 어마어마한 바운티를 걸었는지 알 것 같다. 그냥 간단한 애플리케이션 추출 과정도 번거롭고 번거롭다… iOS 애플리케이션 패키지인 IPA는 안드로이드 APK와 다르게 바로 추출한 파일을 Decompile 했을 때 분석을 할 수...
+
+두개의 .htaccess 를 우회하면 flag를 획득할 수 있다.
+
+1
+2
+3
+4
+5
+6
+7
+8
+$ curl http://htaccess.uctf.ir/one/flag.txt
+&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&amp;gt;
+&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;
+&amp;lt;title...
               </p>
             </div>
           </div>
@@ -1727,32 +1763,6 @@ Welcome to Clou...
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1767,8 +1777,6 @@ Welcome to Clou...
     
     
     
-      
-    
   
     
     
@@ -1783,13 +1791,6 @@ Welcome to Clou...
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1820,24 +1821,11 @@ Welcome to Clou...
     
     
     
-      
-        
-        
-
   
     
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -1854,39 +1842,6 @@ Welcome to Clou...
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1912,6 +1867,34 @@ Welcome to Clou...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
     
   
@@ -1919,6 +1902,15 @@ Welcome to Clou...
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1957,6 +1949,46 @@ Welcome to Clou...
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2014,11 +2046,6 @@ Welcome to Clou...
     
     
     
-  
-    
-    
-    
-    
       
     
   
@@ -2063,6 +2090,11 @@ Welcome to Clou...
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -2093,6 +2125,9 @@ Welcome to Clou...
       <a class="post-tag" href="/tags/firda/">firda</a>
     
       
+      <a class="post-tag" href="/tags/apache/">apache</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
@@ -2102,13 +2137,10 @@ Welcome to Clou...
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
     
       
+      <a class="post-tag" href="/tags/macos/">macos</a>
+    
+      
       <a class="post-tag" href="/tags/nginx/">nginx</a>
-    
-      
-      <a class="post-tag" href="/tags/proxy/">proxy</a>
-    
-      
-      <a class="post-tag" href="/tags/ssl/">ssl</a>
     
 
     </div>

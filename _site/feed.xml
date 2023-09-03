@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Security Research</title>
   <subtitle></subtitle>
-  <updated>2023-03-04T17:32:12+09:00</updated>
+  <updated>2023-09-03T13:02:03+09:00</updated>
   <author>
     <name>Park Min</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,101 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Urmia CTF 2023] htaccess(helicoptering) writeup</title>
+    <link href="http://localhost:4000/posts/urmia-ctf-htaccess/" rel="alternate" type="text/html" title="[Urmia CTF 2023] htaccess(helicoptering) writeup" />
+    <published>2023-09-03T11:01:00+09:00</published>
+  
+    <updated>2023-09-03T11:01:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/urmia-ctf-htaccess/</id>
+    <content src="http://localhost:4000/posts/urmia-ctf-htaccess/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="WEB" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      solve
+
+
+두개의 .htaccess 를 우회하면 flag를 획득할 수 있다.
+
+$ curl http://htaccess.uctf.ir/one/flag.txt
+&amp;lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&amp;gt;
+&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;403 Forbidden&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt;Forbidden&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;You don't have permission to access this resource.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;
+
+만약 우회하지 않고 접근한다면 403을 반환한다.
+R...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)</title>
+    <link href="http://localhost:4000/posts/use-amd64-on-apple-silicon/" rel="alternate" type="text/html" title="[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)" />
+    <published>2023-08-01T01:01:00+09:00</published>
+  
+    <updated>2023-08-01T21:02:37+09:00</updated>
+  
+    <id>http://localhost:4000/posts/use-amd64-on-apple-silicon/</id>
+    <content src="http://localhost:4000/posts/use-amd64-on-apple-silicon/" />
+    <author>
+      <name>Park Min</name>
+    </author>
+
+  
+    
+    <category term="PWNABLE" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Why?
+
+
+  많은 보안인들이 알고 있듯이 Apple Silicon은 포너블을 하기에 참 적합하지가 않다. 업무를 보다보면 필히 x86 바이너리를 다뤄야 하는데, Apple Silicon은 ARM 구조를 사용하고 있기 때문에 제약이 생긴다. 이에 대한 해결 방안으로 amd64 ubuntu 도커를 받고 여기에 분석 도구를 세팅하는 사용자가 많다. 하지만 이 방법은 pwndbg가 동작하지 않는 등 아직까지는 완전히 amd64를 대체할 만한 수단은 아닌 것 같다. 이 때문에 조금 무겁더라도 UTM을 이용하여 amd64 ubuntu 환경을 구축하고자 한다.
+
+
+
+
+UTM 설치
+
+
+  
+    UTM은 QEMU 기반의 에뮬레이터이다. iOS, MacOS 에서 다른 OS를 full system emulation...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -73,7 +168,7 @@
     <link href="http://localhost:4000/posts/ios-setting-frida/" rel="alternate" type="text/html" title="[iOS] iPhone에 Frida 환경 세팅하기" />
     <published>2023-03-04T01:02:00+09:00</published>
   
-    <updated>2023-03-04T01:02:00+09:00</updated>
+    <updated>2023-03-04T17:38:40+09:00</updated>
   
     <id>http://localhost:4000/posts/ios-setting-frida/</id>
     <content src="http://localhost:4000/posts/ios-setting-frida/" />
@@ -169,101 +264,6 @@
 개발자에 의하면 A8 부터 A11 칩셋을 사용하는 모델까지 가능하다고 한다. 호환되는 기기 목록은 아래와 같다.
 
   iPho...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[Docker] Nginx를 이용해서 SSL 설정하기(HTTPS)</title>
-    <link href="http://localhost:4000/posts/docker-nginx-proxy-ssl/" rel="alternate" type="text/html" title="[Docker] Nginx를 이용해서 SSL 설정하기(HTTPS)" />
-    <published>2023-02-01T00:56:01+09:00</published>
-  
-    <updated>2023-02-01T00:56:01+09:00</updated>
-  
-    <id>http://localhost:4000/posts/docker-nginx-proxy-ssl/</id>
-    <content src="http://localhost:4000/posts/docker-nginx-proxy-ssl/" />
-    <author>
-      <name>Park Min</name>
-    </author>
-
-  
-    
-    <category term="DOCKER" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Why?
-
-  최근에 브라우저와 내 서버 간의 HTTP 통신을 다뤄야 하는 일이 있었다. 이 때 브라우저로 접속한 서버는 HTTPS, 내가 구현한 서버는 HTTP 였기 때문에 당연하게도 Mixed Contents 문제가 발생했다. 문제를 해결하기 위해 내 서버에 SSL 인증을 넣어주기로 했다. 서버에 SSL 인증을 받는 방법에는 여러가지가 있지만, 매번 프레임워크 별 HTTPS 적용 방법을 검색하는 것이 지쳤기 때문에 항상 눈독들여 왔던 “nginx reverse proxy로 ssl 인증 적용하기(무려 docker로!)” 를 시도해보려고 한다.
-
-
-
-  +) 금방 구현할 수 있을 줄 알았는데 생각보다 많은 시간이 걸렸다. 관련 글들은 많으나 어딘가 난잡했고, 여기저기서 config 내용을 복붙하다보니 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[Dreamhack CTF Season 2 #11] Welcome writeup</title>
-    <link href="http://localhost:4000/posts/dreamhack-welcome/" rel="alternate" type="text/html" title="[Dreamhack CTF Season 2 #11] Welcome writeup" />
-    <published>2023-01-29T21:56:00+09:00</published>
-  
-    <updated>2023-01-29T23:05:34+09:00</updated>
-  
-    <id>http://localhost:4000/posts/dreamhack-welcome/</id>
-    <content src="http://localhost:4000/posts/dreamhack-welcome/" />
-    <author>
-      <name>Park Min</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="PWNABLE" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      source code
-chal 바이너리의 내용은 아래와 같다.
-
-int __cdecl main(int argc, const char **argv, const char **envp)
-{
-  __asm { endbr64 }
-  sub_1080(1001LL, 1001LL, 1001LL);
-  sub_1090("clear");
-  sub_1070("Tada~!");
-  return 0;
-}
-
-
-바이너리를 실행하면 clear를 실행하고 Tada~ 문자열을 출력한 뒤 종료한다. 이제 remote에 접속해보자
-
-pwn@localhost:~$ id
-uid=1000(pwn) gid=1000(pwn) groups=1000(pwn)
-pwn@localhost:~$ ls -al
-total 48
-drwxr-x--- 1 pwn ...
     </summary>
   
 

@@ -1419,6 +1419,16 @@ $ pip3 install -r requirements.txt
         
         
         
+      <li><a href="/posts/use-amd64-on-apple-silicon/">[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/ios-setting-frida/">[iOS] iPhone에 Frida 환경 세팅하기</a></li>
+      
+        
+        
+        
       <li><a href="/posts/baby-calc-writeup/">[2021 HackPack CTF] baby calc writeup</a></li>
       
         
@@ -1457,32 +1467,6 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1497,8 +1481,6 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-    
   
     
     
@@ -1513,13 +1495,6 @@ $ pip3 install -r requirements.txt
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1550,24 +1525,11 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-        
-        
-
   
     
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -1584,39 +1546,6 @@ $ pip3 install -r requirements.txt
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1642,6 +1571,34 @@ $ pip3 install -r requirements.txt
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
     
   
@@ -1649,6 +1606,15 @@ $ pip3 install -r requirements.txt
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1687,6 +1653,46 @@ $ pip3 install -r requirements.txt
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1744,11 +1750,6 @@ $ pip3 install -r requirements.txt
     
     
     
-  
-    
-    
-    
-    
       
     
   
@@ -1793,6 +1794,11 @@ $ pip3 install -r requirements.txt
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -1823,6 +1829,9 @@ $ pip3 install -r requirements.txt
       <a class="post-tag" href="/tags/firda/">firda</a>
     
       
+      <a class="post-tag" href="/tags/apache/">apache</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
@@ -1832,13 +1841,10 @@ $ pip3 install -r requirements.txt
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
     
       
+      <a class="post-tag" href="/tags/macos/">macos</a>
+    
+      
       <a class="post-tag" href="/tags/nginx/">nginx</a>
-    
-      
-      <a class="post-tag" href="/tags/proxy/">proxy</a>
-    
-      
-      <a class="post-tag" href="/tags/ssl/">ssl</a>
     
 
     </div>
@@ -1891,6 +1897,32 @@ $ pip3 install -r requirements.txt
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1985,21 +2017,6 @@ $ pip3 install -r requirements.txt
 
 
 
-  
-    
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-    
   
     
     
@@ -2110,7 +2127,7 @@ $ pip3 install -r requirements.txt
       
       
       <div class="card">
-        <a href="/posts/docker-nginx-proxy-ssl/">
+        <a href="/posts/urmia-ctf-htaccess/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -2122,13 +2139,13 @@ $ pip3 install -r requirements.txt
 
 
 <em class="small"
-    data-ts="1675180561"
+    data-ts="1693706460"
     data-df="ll"
     >
-  Feb  1, 2023
+  Sep  3, 2023
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Docker] Nginx를 이용해서 SSL 설정하기(HTTPS)</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Urmia CTF 2023] htaccess(helicoptering) writeup</h3>
             <div class="text-muted small">
               <p>
                 
@@ -2137,9 +2154,23 @@ $ pip3 install -r requirements.txt
 
 
 
-                Why?
+                solve
 
-  최근에 브라우저와 내 서버 간의 HTTP 통신을 다뤄야 하는 일이 있었다. 이 때 브라우저로 접속한 서버는 HTTPS, 내가 구현한 서버는 HTTP 였기 때문에 당연하게도 Mixed Contents 문제가 발생했다. 문제를 해결하기 위해 내 서버에 SSL 인증을 넣어주기로 했다. 서버에 SSL 인증을 받는 방법에는 여러가지가 있지만, 매...
+
+두개의 .htaccess 를 우회하면 flag를 획득할 수 있다.
+
+1
+2
+3
+4
+5
+6
+7
+8
+$ curl http://htaccess.uctf.ir/one/flag.txt
+&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&amp;gt;
+&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;
+&amp;lt;title...
               </p>
             </div>
           </div>
@@ -2165,10 +2196,10 @@ $ pip3 install -r requirements.txt
   
 
   
-  <div class="btn btn-outline-primary disabled"
+  <a href="/posts/use-amd64-on-apple-silicon/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>-</p>
-  </div>
+    <p>[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)</p>
+  </a>
   
 
 </div>
@@ -2212,32 +2243,6 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2252,8 +2257,6 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-    
   
     
     
@@ -2268,13 +2271,6 @@ $ pip3 install -r requirements.txt
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2305,24 +2301,11 @@ $ pip3 install -r requirements.txt
     
     
     
-      
-        
-        
-
   
     
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -2339,39 +2322,6 @@ $ pip3 install -r requirements.txt
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2397,6 +2347,34 @@ $ pip3 install -r requirements.txt
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
     
   
@@ -2404,6 +2382,15 @@ $ pip3 install -r requirements.txt
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2442,6 +2429,46 @@ $ pip3 install -r requirements.txt
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2499,11 +2526,6 @@ $ pip3 install -r requirements.txt
     
     
     
-  
-    
-    
-    
-    
       
     
   
@@ -2548,6 +2570,11 @@ $ pip3 install -r requirements.txt
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -2578,6 +2605,9 @@ $ pip3 install -r requirements.txt
       <a class="post-tag" href="/tags/firda/">firda</a>
     
       
+      <a class="post-tag" href="/tags/apache/">apache</a>
+    
+      
       <a class="post-tag" href="/tags/docker/">docker</a>
     
       
@@ -2587,13 +2617,10 @@ $ pip3 install -r requirements.txt
       <a class="post-tag" href="/tags/jailbreak/">jailbreak</a>
     
       
+      <a class="post-tag" href="/tags/macos/">macos</a>
+    
+      
       <a class="post-tag" href="/tags/nginx/">nginx</a>
-    
-      
-      <a class="post-tag" href="/tags/proxy/">proxy</a>
-    
-      
-      <a class="post-tag" href="/tags/ssl/">ssl</a>
     
 
     </div>
