@@ -44,7 +44,10 @@ RewriteRule ".*" "-" [F]
 
 ```
 THE_REQUEST
-    The full HTTP request line sent by the browser to the server (e.g., "GET /index.html HTTP/1.1"). This does not include any additional headers sent by the browser. This value has not been unescaped (decoded), unlike most other variables below.
+    The full HTTP request line sent by the browser to the server
+    (e.g., "GET /index.html HTTP/1.1"). This does not include any 
+    additional headers sent by the browser. This value has not been 
+    unescaped (decoded), unlike most other variables below.
 ```
 [documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)에 의하면 request path 부분(GET /path HTTP/1.1)이 THE_REQUEST 변수에 해당하는 것으로 보인다. 또한, decoded text라고 하니, flag 부분을 url encode 해주면 될 것 같다.
 
