@@ -7,7 +7,7 @@ description: ctypes를 이용해 random 값 생성하기
 ---
 
 ## source code
-소스코드가 주어지는 문제이다.
+소스코드가 주어지는 문제이다
 
 ```c
 /* cat_jump.c

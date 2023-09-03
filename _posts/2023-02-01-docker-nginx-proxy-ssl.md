@@ -100,6 +100,8 @@ services:
 
 여기서 29번 라인에 URL에는 `docker-compose.yml` 에 작성한 본인의 애플리케이션 container name을 적어주면 된다. (예시는 your-application)
 
+~~인증이 안될 경우 처음에는 443 부분을 지우고 했던 것 같다~~
+
 ```nginx
 worker_processes auto;
 error_log /var/log/nginx/error.log warn;

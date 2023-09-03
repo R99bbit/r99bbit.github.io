@@ -7,7 +7,7 @@ description: exploit setuid binary
 ---
 
 ## source code
-chal 바이너리의 내용은 아래와 같다.
+chal 바이너리의 내용은 아래와 같다
 
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)

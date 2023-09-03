@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Security Research</title>
   <subtitle></subtitle>
-  <updated>2023-09-03T13:02:03+09:00</updated>
+  <updated>2023-09-03T19:27:02+09:00</updated>
   <author>
     <name>Park Min</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/urmia-ctf-htaccess/" rel="alternate" type="text/html" title="[Urmia CTF 2023] htaccess(helicoptering) writeup" />
     <published>2023-09-03T11:01:00+09:00</published>
   
-    <updated>2023-09-03T11:01:00+09:00</updated>
+    <updated>2023-09-03T13:07:44+09:00</updated>
   
     <id>http://localhost:4000/posts/urmia-ctf-htaccess/</id>
     <content src="http://localhost:4000/posts/urmia-ctf-htaccess/" />
@@ -73,7 +73,7 @@ R...
     <link href="http://localhost:4000/posts/use-amd64-on-apple-silicon/" rel="alternate" type="text/html" title="[MacOS] Apple Silicon 맥북에서 amd64 사용하기(UTM)" />
     <published>2023-08-01T01:01:00+09:00</published>
   
-    <updated>2023-08-01T21:02:37+09:00</updated>
+    <updated>2023-09-03T13:04:24+09:00</updated>
   
     <id>http://localhost:4000/posts/use-amd64-on-apple-silicon/</id>
     <content src="http://localhost:4000/posts/use-amd64-on-apple-silicon/" />
